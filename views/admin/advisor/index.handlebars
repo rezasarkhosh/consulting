@@ -1,0 +1,48 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+<h1>همه مشاورین</h1>
+
+    <table class="table table-bordered">
+
+        <thead>
+         <tr>
+        <th> نام و نام خانوادگی</th>
+        <th> تحصیلات </th>
+        <th> تاریخ ثبت </th>
+        <th> پسورد </th>
+             <th> حوزه مشاوره </th>
+             <th> ایمیل </th>
+             <th > مدرک </th>
+        </tr>
+        </thead>
+
+
+        <tbody>
+        {{#each advisors}}
+        <tr>
+            <td> {{this.name}} </td>
+            <td> {{this.education}} </td>
+            <td> {{this.date}} </td>
+            <td> {{this.password}} </td>
+            <td> {{this.part}} </td>
+            <td> {{this.email}} </td>
+            <td style="text-align: center;">
+
+                <a href="/advisorImage/madrak/{{madrak}}" download="{{madrak}}">
+                    <img class="img-fluid" at style="width: 50px;"
+                         src="/advisorimage/madrak/{{madrak}}" alt=""> </a>
+            </td>
+        </tr>
+        {{/each}}
+        </tbody>
+
+
+
+
+
+    </table>
+
+
+
+
+
+</Div>

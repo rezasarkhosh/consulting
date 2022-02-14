@@ -1,0 +1,35 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+    <h1>همه سوالات</h1>
+
+    <table class="table table-bordered">
+
+        <thead>
+        <tr>
+            <th> کد پیگیری </th>
+            <th> عنوان </th>
+            <th> از مشاور </th>
+            <th> شماره تلفن </th>
+            <th> پاسخ دریافتی </th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        {{#each answers}}
+        <tr>
+            <td> {{this.code}} </td>
+            <td> {{this.title}} </td>
+            <td> {{this.name}} </td>
+            <td> {{this.phone}} </td>
+            <td> {{this.ask}} </td>
+
+        </tr>
+        {{/each}}
+        </tbody>
+
+
+    </table>
+
+
+
+</Div>

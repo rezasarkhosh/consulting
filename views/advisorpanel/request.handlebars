@@ -1,0 +1,48 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+    <h1>همه سوالات</h1>
+
+    <table class="table table-bordered">
+
+        <thead>
+        <tr>
+            <th> کد پیگیری </th>
+            <th> عنوان </th>
+            <th> شماره موبایل </th>
+            <th> ایمیل کاربر </th>
+            <th> ایدی کاربر </th>
+            <th> نوع درخواست </th>
+            <th> نوع مشاوره </th>
+            <th> سوال کاربر </th>
+            <th> فیش </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {{#each requests}}
+            <tr>
+                <td> {{this.code}} </td>
+                <td> {{this.title}} </td>
+                <td> {{this.phone}} </td>
+                <td> {{this.email}} </td>
+                <td> {{this.user}} </td>
+                <td> {{this.pay}} </td>
+                <td> {{this.chat}} </td>
+                <td> {{this.ask}} </td>
+                <td style="text-align: center;">
+
+                    <a href="/userimage/fishvariz/{{fishvariz}}" download="{{fishvariz}}">
+                        <img class="img-fluid" at style="width:50px; "
+                             src="/userimage/fishvariz/{{fishvariz}}" alt=""> </a>
+                </td>
+
+
+            </tr>
+        {{/each}}
+        </tbody>
+
+
+    </table>
+
+
+
+</Div>

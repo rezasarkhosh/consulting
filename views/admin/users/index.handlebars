@@ -1,0 +1,33 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+    <h1>همه کاربران</h1>
+
+    <table class="table table-bordered">
+
+        <thead>
+        <tr>
+            <th> نام و نام خانوادگی</th>
+            <th> ایمیل </th>
+            <th> شماره موبایل </th>
+            <th> رمز عبور </th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        {{#each users}}
+            <tr>
+                <td> {{this.name}} </td>
+                <td> {{this.email}} </td>
+                <td> {{this.password}} </td>
+                <td> {{this.number}} </td>
+
+            </tr>
+        {{/each}}
+        </tbody>
+
+
+    </table>
+
+
+
+</Div>

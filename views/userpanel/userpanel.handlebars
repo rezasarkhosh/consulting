@@ -1,0 +1,24 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+
+    <h2> اطلاعات کاربری شما </h2>
+    <form>
+        <div class="form-group">
+            <label for="name"> نام و نام خانوادگی </label>
+            <input class="form-control disabled" type="text" value="{{#if user}} {{user.name}} {{/if}}" id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="mail"> ایمیل </label>
+            <input class="form-control disabled" type="text" value="{{#if user}} {{user.email}} {{/if}}" id="mail">
+        </div>
+
+        <div class="form-group">
+            <label for="number"> شماره موبایل </label>
+            <input class="form-control disabled" type="text" value="{{#if user}} {{user.number}} {{/if}}" id="number">
+        </div>
+    </form>
+
+
+
+</div>
+

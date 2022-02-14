@@ -1,0 +1,46 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+
+    <h1> ارسال پاسخ به کاربر </h1>
+    <form action="/advisorpanel/answer" method="post">
+
+        <div class="form-group">
+            <label for="ids"> آیدی کاربر   </label>
+            <input name="ids" class="form-control" type="text" placeholder="لطفا ایدی کاربر مورد نظرتان را وارد کنید"
+                   id="ids">
+        </div>
+        <div class="form-group">
+            <label for="code"> کد پیگیری  </label>
+            <input name="code" class="form-control" type="text" placeholder="لطفا کد پیگیری مورد نظر خود را وارد کنید "
+                   id="code">
+        </div>
+        <div class="form-group">
+            <label for="name"> نام خود </label>
+            <input name="name" class="form-control" type="text" placeholder="لطفا نام خود را وارد کنید"
+                   id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="title"> عنوان </label>
+            <input name="title" class="form-control" type="text" placeholder="عنوان پاسخ خود را وارد نمایید"
+                   id="title">
+        </div>
+
+        <div class="form-group">
+            <label for="phone"> شماره تلفن همراه شما </label>
+            <input name="phone" class="form-control" type="text" placeholder="شماره موبایل خود را وارد نمایید"
+                   id="phone">
+        </div>
+
+
+        <div class="form-group">
+            <label for="ask"> پاسخ خود را وارد کنید </label>
+            <textarea class="form-control" name="ask" rows="8" id="ask">    </textarea>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary float-right"> ارسال </button>
+
+
+    </form>
+
+</Div>

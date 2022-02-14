@@ -1,0 +1,71 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-light  bg-white">
+  <div class="d-flex align-items-center">
+    <a href="#" class="navbar-brand display-2">پنل مدیریت محتوا</a>
+    <i class="fas fa-angle-double-right h4 text-secondary mr-3" data-toggle="collapse" data-target="#sidebar"
+      style="cursor: pointer;"></i>
+  </div>
+
+
+
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#mainmenu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse mr-3 d-md-flex justify-content-md-between  " id="mainmenu">
+
+    <nav class="navbar-nav">
+      <li class="nav-item my-1"><a href="/admin" class="nav-link">
+          <i class="fas fa-tachometer-alt text-success"></i>
+          پیشخوان
+        </a></li>
+      <li class="nav-item  my-1"><a href="/admin/users" class="nav-link">
+          <i class="fas fa-users text-info"></i>
+          کاربران
+        </a></li>
+      <li class="nav-item my-1"><a href="#" class="nav-link">
+          <i class="fas fa-sliders-h"></i>
+          تنظیمات
+        </a></li>
+    </nav>
+
+    <nav class="navbar-nav align-items-center d-none d-md-flex">
+      <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+          <span class="badge badge-pill badge-danger">4</span>
+          <i class="far fa-bell"></i>
+
+          <div class="dropdown-menu text-left dropdown-menu-right">
+            <div class="dropdown-headr text-center bg-light">
+              شما 4 اعلان دارید.
+            </div>
+            <a href="#" class="dropdown-item text-secondary"> درخواست ثبت نام از سوی مشاور</a>
+            <a href="#" class="dropdown-item text-secondary"> شکایت کاربر از مشاور</a>
+          </div>
+        </a></li>
+      <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+          <span class="badge badge-pill badge-danger">6</span>
+          <i class="fas fa-tasks"></i>
+
+          <div class="dropdown-menu text-left dropdown-menu-right">
+            <div class="dropdown-headr text-center bg-light">
+              شما 4 اعلان دارید.
+            </div>
+            <a href="#" class="dropdown-item text-secondary"> درخواست ثبت نام از سوی مشاور</a>
+            <a href="#" class="dropdown-item text-secondary"> شکایت کاربر از مشاور</a>
+          </div>
+
+        </a></li>
+      <li class="nav-item dropdown"><a href="#" class="nav-link" data-toggle="dropdown">
+          <img src="/images/1.png" width="40">
+          <div class="dropdown-menu text-left dropdown-menu-right">
+            <div class="dropdown-headr text-center bg-light">
+                {{#if user}} {{user.name}} {{/if}}
+            </div>
+            <a href="/user/userpanel" class="dropdown-item text-secondary">حساب کابری</a>
+            <a href="/logout" class="dropdown-item text-secondary"> خروج</a>
+          </div>
+
+        </a></li>
+
+    </nav>
+  </div>
+</nav>

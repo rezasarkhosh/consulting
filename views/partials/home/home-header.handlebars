@@ -1,0 +1,64 @@
+<div class="container-fluid bg-dark h-50 col-md ">
+        {{#if user}}
+
+            <div class="btn-group" role="group" aria-label="basic">
+                <button type="button" class="btn btn-primary"> <a href="user/userPanel"
+                                                                  style=" text-decoration:none; color: aliceblue;"> پنل کاربری  </a> </button>
+            </div>
+
+        {{else }}
+
+            <div class="btn-group" role="group" aria-label="basic">
+                <button type="button" class="btn btn-primary"> <a href="/login"
+                                                                  style=" text-decoration:none; color: aliceblue;"> ورود </a> </button>
+                <button type="button" class="btn btn-primary"> <a href="/register"
+                                                                  style=" text-decoration:none; color: aliceblue;"> ثبت نام </a> </button>
+            </div>
+
+        {{/if}}
+
+
+    </div>
+    <div class="container-fluid  bg-light h-50 col-md ">
+        <div class="row">
+            <div class="col-2 d-md-none d-md-none bg-rgb(224,255,255) text-light ">
+                <button data-toggle="collapse" data-target="#demo" class="btn btn-primary mt-4"> show </button>
+
+                <div id="demo" class="collapse " style="z-index:1; position:absolute;">
+                    <div id="div2"
+                         class="col-md-10 d-md-block col-xl-10 bg-rgb(224,255,255) text-light border align-items-end ">
+                        <div
+                                class="f-c d-sm-none d-md-flex  flex-row-reverse justify-content-start align-items-end flex-grow-0">
+                            <div class="f-i2  "><a href="/" style=" text-decoration:none; color: aliceblue;"> صفحه اصلی
+                            </a> </div>
+                            <div class="f-i2  "> <a href="/loginadvisor"> ورود مشاور </a>   </div>
+                            <div class="f-i2 "> مشاوره عمومی </div>
+                            <div class="f-i2 "> درباره ما </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="div2"
+                 class="d-none col-md-10 d-md-block col-xl-10 bg-rgb(224,255,255) text-light border align-items-end">
+                <div
+                        class="f-c d-sm-none d-md-flex  flex-row-reverse justify-content-start align-items-end flex-grow-0">
+                    <div class="f-i  "> <a href="/" style=" text-decoration:none; color: aliceblue;"> صفحه اصلی </a>
+                    </div>
+                    <div class="f-i  "> <a href="/loginadvisor" style=" text-decoration:none; color: aliceblue;"> ورود مشاور </a>
+                    </div>
+                    <div class="f-i "> <a href="#" style=" text-decoration:none; color: aliceblue;"> مشاوره عمومی </a>
+                    </div>
+                    <div class="f-i "> <a href="#" style=" text-decoration:none; color: aliceblue;"> درباره ما </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-8 d-sm-block d-md-none  bg-rgb(224,255,255)">
+
+            </div>
+            <div class="col-4 col-sm-2  d-sm-block bg-rgb(224,255,255) text-light  ">
+                <img class="img-fluid img-thumbnail border-0 " src="images/logo.png" alt="logo">
+
+            </div>
+        </div>
+    </div>
+

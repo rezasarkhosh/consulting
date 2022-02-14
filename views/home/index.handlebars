@@ -1,0 +1,145 @@
+<div class="bg">
+
+
+
+    <h1 class="hTags"> مشاوره آیلاند </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2 mt-4">
+                <div id="myslideshow" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <h4 class="hTags" class="bg-white "> مشاورین مجرب </h4>
+                            <img class="d-block w-100" src="images/psychology-heal.jpg" alt="first">
+
+                        </div>
+                        <div class="carousel-item">
+                            <h4 class="hTags" class="bg-white "> صرفه جویی در زمان </h4>
+                            <img class="d-block w-100" src="images/psychotherapy-abstract-concept.jpg" alt="second">
+                        </div>
+                        <div class="carousel-item">
+                            <h4 class="hTags" class="bg-white "> رعایت حریم خصوصی شما </h4>
+                            <img class="d-block w-100" src="images/online-therapy-abstract-concept.jpg" alt="third">
+                        </div>
+
+                    </div>
+                    <a href="#myslideshow" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#myslideshow" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="hTags"> چرا تیم مشاوره ما؟</h2>
+    <div class="container" dir="rtl">
+        <div class="row">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                <div class="card">
+                    <img src="images/psychological-help.jpg" class="card-img-top" alt="مشاور پولی">
+                    <div class="card-body">
+                        <h4 class="alignR"> خدمات مشاوره اختصاصی </h4>
+                        <P class="text-justify"> شما می توانید با پرداخت وجه به شکل تماس تلفنی و چت سوال خود را از
+                            مشاورین ما بپرسید. </P>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                <div class="card">
+                    <img src="images/psychotherapy-abstract-concept.jpg" class="card-img-top" alt="مشاور پولی">
+                    <div class="card-body">
+                        <h4 class="alignR"> خدمات مشاوره عمومی </h4>
+                        <P class="text-justify"> با پرداخت هزینه کمتر، پرسش پاسخ رایگان افراد دیگر را مشاهده نمایید.
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                <div class="card">
+                    <img src="images/online-therapy-abstract-concept.jpg" class="card-img-top" alt="مشاور پولی">
+                    <div class="card-body">
+                        <h4 class="alignR"> برترین مشاورین </h4>
+                        <P class="text-justify"> بعد از اتمام هر مشاوره می توانید به مشاور خود امتیاز داده و یا مشاور
+                            خود را بر اساس امتیاز انتخاب نمایید. </P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                <div class="card">
+                    <img src="images/psychology-heal.jpg" class="card-img-top" alt="مشاور پولی">
+                    <div class="card-body">
+                        <h4 class="alignR"> حریم خصوصی </h4>
+                        <P class="text-justify"> اطلاعات شخصی شما نزد ما کاملا محفوظ بوده و اطلاعات شما در صورت درخواست،
+                            در اختیار عموم قرار نخواهد گرفت </P>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <br>
+    <h4 class="hTags"> سوالات شما </h4>
+    <div class="box"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                {{#each freeReqs}}
+                <div class="media mt-3">
+
+                    <div class="media-body">
+                        <h5 class="alignR"> کاربر </h5>
+
+                        <div class="alignR">
+                            {{this.ask}}
+                        </div>
+                        <div class="media mt-3">
+                            <div class="media-body">
+                                <h5 class="alignR"> مشاور  </h5>
+                                <p class="alignR">
+                                    {{this.answer}}
+                                </p>
+                            </div>
+                            <img class="mr-3" src="images/6.png" width="64" height="64" alt="">
+                        </div>
+
+                         </div>
+                    <img class="mr-3" src="images/7.png" width="64" height="64" alt="">
+
+                </div>
+                {{/each}}
+
+                <button class="btn btn-primary"> ادامه سوالات </button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+</div>
+</div>

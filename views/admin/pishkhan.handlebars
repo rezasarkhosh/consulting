@@ -1,0 +1,111 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+    <div class="card-deck">
+        <div class="card text-danger bg-rimary mb-3 border-0 shadow">
+
+            <div class="card-body">
+                <i class="fas fa-chart-bar h5 float-right"></i>
+                <h5 class="card-title">آمار درخواست مشاره</h5>
+                <p class="card-text">در این بخش شما تعداد درخواست هایی که تا کنون برای مشاوره پولی ثبت شده اند را مشاهده می کنید.</p>
+                <canvas id="chart1" class="w-100" height="100"></canvas>
+            </div>
+        </div>
+        <div class="card text-danger bg-rimary mb-3 border-0 shadow"  >
+            <div class="card-body">
+                <i class="fas fa-users h5 float-right"></i>
+                <h5 class="card-title">تعداد مشاور ها</h5>
+                <p class="card-text">در این بخش شما می توانید تعداد کل مشاور ها را علی رغم حوزه فعالیت آنها، مشاهده نماید</p>
+
+            </div>
+        </div>
+
+        <div class="card text-danger bg-rimary mb-3 border-0 shadow"  >
+            <div class="card-body">
+                <i class="fas fa-users h5 float-right"></i>
+                <h5 class="card-title"> تعداد کاربران </h5>
+                <p class="card-text">تعداد کل کاربران که تا به امروز علی رغم ارسال در خواست یا عدم ارسال درخواست در وبسایت ثبت نام کرده اند</p>
+            </div>
+        </div>
+
+        <div class="card text-danger bg-rimary mb-3 border-0 shadow"  >
+            <div class="card-body">
+                <i class="fas fa-users h5 float-right"></i>
+                <h5 class="card-title"> میزان فروش </h5>
+                <p class="card-text">میزان درآمد کلی وبسایت، با محاسبه تمام موارد اعم از سهم مشاور، سهم وبسایت و سایر موارد که تا کنون به دست آمده است.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ---------------------------- deck-------------------------------------------------------->
+    <div class="card text-dark bg-white my-3 border-0 shadow ml-auto">
+        <div class="card-body">
+            <div class="d-flex mb-4 justify-content-between align-items-center">
+                <h5 class="card-title">آمار بازدید سایت</h5>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-secondary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> روز
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> ماه
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> سال
+                    </label>
+                </div>
+                <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="گرفتن خروجی">
+                    <i class="fas fa-file-export"></i>
+                </button>
+            </div>
+            <canvas id="visit" class="w-100" height="300"></canvas>
+        </div>
+        <!-------------------------------------------------data-------------------------------------------------------------->
+        <div class="card-footer">
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                    <strong class="text-muted">بازدید کل</strong>
+                    <p class="my-3">53000 کاربر (40%)</p>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-info" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                    <strong class="text-muted">بازدید های یکتا</strong>
+                    <p class="my-3">49000 کاربر (35%)</p>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-warning" style="width: 35%;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                    <strong class="text-muted">بازدید صفحات سایت</strong>
+                    <p class="my-3">85000 کاربر (80%)</p>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-primary" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                    <strong class="text-muted">کاربران جدید</strong>
+                    <p class="my-3">20000 کاربر (25%)</p>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-success" style="width: 25%;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md my-2 my-md-0">
+                    <strong class="text-muted">نرخ خروج</strong>
+                    <p class="my-3">45%</p>
+                    <div class="progress" style="height: 10px;">
+                        <div class="progress-bar bg-danger" style="width: 45%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</Div>
+
+</div>
+
+

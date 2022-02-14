@@ -1,0 +1,54 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+    <h1> افزودن مشاور به لیست مشاوران </h1>
+    <form action="/admin/advisor/addAdvisor" method="post" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label for="name"> نام </label>
+            <input name="name" class="form-control" type="text" placeholder="نام و نام خانوادگی را وارد نمایید"
+                id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="education"> تحصیلات </label>
+            <input class="form-control" name="education" type="text" placeholder="میزان تحصیلات را وارد نمایید"
+                id="education">
+        </div>
+        <div class="form-group">
+            <label for="email"> ایمیل </label>
+            <input class="form-control" name="email" type="text" placeholder="ایمیل خود را وارد کنید" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="date"> تاریخ </label>
+            <input class="form-control" name="date" type="text" placeholder="تاریخ را وارد نمایید" id="date">
+        </div>
+
+        <div class="form-group">
+            <label for="password"> ساخت رمز عبور </label>
+            <input class="form-control" name="password" type="text"
+                placeholder="رمز عبور مورد نظر را برای کار وارد نمایید." id="password">
+        </div>
+
+
+        <div class="form-group">
+            <label for="part"> حوزه کاری </label>
+            <select name="part" class="form-control" id="part">
+                <option value="financial"> مشاور مالی </option>
+                <option value="personal"> مشاور فردی </option>
+                <option value="job"> مشاور موفقیت شغلی </option>
+                <option value="addiction"> ترک اعتیاد </option>
+                <option value="educational"> مشاور تحصیلی </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="file"> مدارک </label>
+            <input class="form-control-file" name="advisorrequest" type="file" id="file">
+        </div>
+        <button type="submit" class="btn btn-primary float-right"> افزودن </button>
+
+    </form>
+
+
+
+</Div>

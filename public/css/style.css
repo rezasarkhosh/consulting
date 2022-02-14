@@ -1,0 +1,50 @@
+.bg {
+  background-color:rgb(224,255,255);
+  min-height: 200px;
+  min-width: 300px;
+}
+.f-c{
+  width: 100%;
+
+  border-radius: 5px;
+  margin: 15px auto;
+
+}
+.f-i{
+  padding: 15px;
+  background: hsl(290, 100%, 44%);
+  width: 155px;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 4px;
+  margin-right: 3px;
+  text-align: center;
+  text-decoration:none;
+  color: aliceblue;
+}
+html{
+  height: 100%;
+}
+#div2 {
+  padding: 0px;
+
+}
+.hTags {
+  text-align: center;
+}
+.alignR{
+  text-align: right;
+
+}
+.f-i2{
+  padding: 15px;
+  background: hsl(290, 100%, 44%);
+  width: 30rem;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 4px;
+  margin-right: 3px;
+  text-align: center;
+
+}
+

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="/../css/styleLogin.css">
+</head>
+
+<body>
+<div>
+    <div style="direction: rtl;">
+        <div>
+
+            <div class="content">
+
+                {{#if message}}
+                    <small>
+                        {{message}}
+                    </small>
+
+                {{/if}}
+                <h2 style="text-align: right;"> ورود مشاور</h2>
+                <form action="/advisorLoginProccess" method="post">
+                    <div class="form-group">
+                        <input name="email" type="String" id="mail" placeholder="ایمیل" />
+                    </div>
+                    <div class="form-group">
+                        <input name="password" type="String" id="password" placeholder="رمز عبور " />
+                    </div>
+
+                    <button type="submit">ورود</button>
+                </form>
+            </div>
+        </div>
+
+
+
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+ body{
+     direction: rtl;
+     font-family: 'iransans';
+     
+    }
+    #sidebar a ,#sidbar i {
+       color: #fff;
+    }
+    #sidebar .nav-link {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    #sidebar {
+        height: calc(100vh - 72px);
+        transition: transform 0.3s;
+        z-index: 1000;
+    }
+    #sidebar.collapse.show {
+        transform: translate(0,0);
+    }
+    #sidebar.collapsing {
+        transform: translate(100%,0);
+    }
+    .fa-angle-double-right.collapsed{
+        transform: rotate(180deg);
+    }
+    .fa-angle-double-right{
+       transition: all 0.6s;
+    }

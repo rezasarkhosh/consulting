@@ -1,0 +1,78 @@
+<Div id="main-content" class="col-12 col-md-11 p-4 ml-auto">
+    <h1> ارسال درخواست مشاوره </h1>
+    <form action="/user/userPanel/request" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="code">کد پیگیری </label>
+            <input name="code" class="form-control" type="text" id="code" value="{{string}}">
+        </div>
+
+        <div class="form-group">
+            <label for="title"> عنوان </label>
+            <input name="title" class="form-control" type="text" placeholder="عنوان درخواست خود را وارد نمایید"
+                id="title">
+        </div>
+
+        <div class="form-group">
+            <label for="phone"> شماره تلفن همراه شما </label>
+            <input name="phone" class="form-control" type="text" placeholder="شماره موبایل خود را وارد نمایید"
+                id="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="email"> ایمیل شما </label>
+            <input class="form-control" name="email" type="text" placeholder="ایمیل خود را به شکل صحیح وارد نمایید."
+                id="email">
+        </div>
+
+
+        <div class="form-group">
+            <label for="advisor"> نام مشاور مد نظرتان انتخاب کنید ( قبل از انتخاب به لیست مشاوران و حوزه فعالیت آنها
+                توجه نمایید ) </label>
+            <select name="advisor" class="form-control" id="advisor">
+
+                {{#each advisor}}
+                <option value="{{this.id}}">{{this.name}}</option>
+                {{/each}}
+                <option value=""></option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pay">  درخواست چه نوع مشاوره ای را دارید؟ ( برای مشاور رایگان چت های شما به شکل ناشسناس در صفحه اصلی سایت منتشر می شود ) </label>
+            <select name="pay" class="form-control" id="pay">
+                <option value="free"> مشاوره رایگان </option>
+                <option value="pay"> مشاوره پولی </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="chat"> مشاوره به شکل تلفنی یا چت؟ </label>
+            <select name="chat" class="form-control" id="chat">
+                <option value="call"> مشاوره با تماس صوتی </option>
+                <option value="chat"> مشاوره با چت </option>
+            </select>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="form-group">
+                <label for="file"> اگر انتخاب شما مشاوره پولی است، به شماره کارت 6219861944*****5 مبلغ 25.000 هزار تومان
+                    را واریز کرده و عکس فیش واریزی خود را آپلود نمایید. </label>
+                <input class="form-control-file" name="userrequest" type="file" id="file">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ask"> سوال خود را مطرح نمایید </label>
+            <textarea class="form-control" name="ask" rows="8" id="ask">    </textarea>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary float-right"> ارسال </button>
+
+
+    </form>
+
+
+
+</Div>
